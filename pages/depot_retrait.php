@@ -17,6 +17,7 @@ $choix = $_GET['choix'] ;
     <main>
         <?php 
         if ($choix === "depot") { ?>
+            <h1>DEPOT</h1>
             <form action="../php/traitement_depot.php" method="get">
                 <label for="personne">Personne : </label>
                 <select name="personne" id="personne">
@@ -36,6 +37,7 @@ $choix = $_GET['choix'] ;
             </form>
         <?php }
         else if ($choix === "retrait") { ?>
+            <h1>RETRAIT</h1>
             <form action="../php/traitement_retrait.php" method="get">
                 <label for="personne">Personne : </label>
                 <select name="personne" id="personne">
