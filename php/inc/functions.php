@@ -36,11 +36,17 @@ function execute_query($sql){
 }
 // -------------------------------------------------------------------------
 // INSERT :
-function insert_into_
+function insert_into_historique_depot($personne_id, $raison_titre, $montant, $total) {
+    $sql = "INSERT INTO historique_depot 
+    VALUES ('%s', '%s', '%s', '%s');";
+    $sql = sprintf($sql, $personne_id, $raison_titre, $montant, $total);
+
+    return execute_query($sql) ;
+}
 // ----------------------------------------------------------------------------
 // MODIFICATION-SUPPRESSION ANIME:
 // ----------------------------------------------------------------------------
-// INSCRIPTION et LOGIN
+// INSCRIPTION et LOGIN :
 // ----------------------------------------------------------------------------
 // GET ALL : 
 function get_all_personnes() {
