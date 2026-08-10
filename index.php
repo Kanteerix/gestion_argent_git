@@ -10,7 +10,7 @@
 
     </head>
     <main>
-        <a href="pages/retrait.php"><button>RETRAIT</button></a> OU <a href="pages/depot.php"><button>DEPOT</button></a>
+        <a href="pages/depot_retrait.php?choix=depot"><button>DEPOT</button></a> OU <a href="pages/depot_retrait.php?choix=retrait"><button>RETRAIT</button></a>
     </main>
     <footer>
 
