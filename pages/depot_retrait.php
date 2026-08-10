@@ -12,13 +12,13 @@ $choix = $_GET['choix'] ;
 </head>
 <body>
     <head>
-
+        <a href="../index.php">Retour Accueil (choix)</a>
     </head>
     <main>
         <?php 
         if ($choix === "depot") { ?>
             <h1>DEPOT</h1>
-            <form action="../php/traitement_depot.php" method="get">
+            <form action="../php/traitements/traitement_depot.php" method="get">
                 <label for="personne">Personne : </label>
                 <select name="personne" id="personne">
                     <?php 
@@ -30,9 +30,9 @@ $choix = $_GET['choix'] ;
                 <?php } ?>
                 </select><br>
                 <label for="raison_titre">Titre RAISONS : </label>
-                <input type="text" id="raison_titre"><br>
+                <input type="text" name="raison_titre" id="raison_titre"><br>
                 <label for="montant">Montant : </label>
-                <input type="number" id="montant"><br>
+                <input type="number" name="montant" id="montant"><br>
                 <input type="submit" value="Deposer">
             </form>
         <?php }

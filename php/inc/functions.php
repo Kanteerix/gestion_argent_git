@@ -36,6 +36,7 @@ function execute_query($sql){
 }
 // -------------------------------------------------------------------------
 // INSERT :
+function insert_into_
 // ----------------------------------------------------------------------------
 // MODIFICATION-SUPPRESSION ANIME:
 // ----------------------------------------------------------------------------
@@ -48,8 +49,14 @@ function get_all_personnes() {
 
     return get_all_lines($sql) ;
 }
-
 // -------------------------------------------------------------------------------
 // GET ONE : 
+function get_one_personne($personne_id) {
+    $sql = "SELECT * 
+    FROM personnes 
+    WHERE personne_id = '%s';" ;
+    $sql = sprintf($sql, $personne_id) ;
 
+    return get_one_line($sql) ;
+}
 ?>
