@@ -4,7 +4,7 @@ function db_connect()
     static $connect = null;
 
     if ($connect === null) {
-        $connect = mysqli_connect('localhost', 'root', '', 'Animenyusu');
+        $connect = mysqli_connect('localhost', 'root', '', 'money');
 
         if (!$connect) {
             // Arrête le script et affiche une erreur si la connexion échoue
