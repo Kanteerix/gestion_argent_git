@@ -38,7 +38,7 @@ $choix = $_GET['choix'] ;
         <?php }
         else if ($choix === "retrait") { ?>
             <h1>RETRAIT</h1>
-            <form action="../php/traitement_retrait.php" method="get">
+            <form action="../php/traitements/traitement_retrait.php" method="get">
                 <label for="personne">Personne : </label>
                 <select name="personne" id="personne">
                     <?php 

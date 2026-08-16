@@ -44,7 +44,7 @@ function insert_into_historique_depot($personne_id, $raison_titre, $montant, $to
     return execute_query($sql) ;
 }
 // ----------------------------------------------------------------------------
-// MODIFICATION-SUPPRESSION ANIME:
+// MODIFICATION-SUPPRESSION:
 // ----------------------------------------------------------------------------
 // INSCRIPTION et LOGIN :
 // ----------------------------------------------------------------------------
