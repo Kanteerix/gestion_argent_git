@@ -13,3 +13,9 @@
     border: 3px solid magenta;
     border-radius: 30px;
 }
+.champ {
+    color: white;
+    font-size: 25px;
+    padding-top: 0.2vh;
+    padding-bottom: 0.2vh;
+}
