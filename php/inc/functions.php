@@ -37,7 +37,7 @@ function execute_query($sql){
 // -------------------------------------------------------------------------
 // INSERT :
 function insert_into_historique_depot($personne_id, $raison_titre, $montant, $total) {
-    $sql = "INSERT INTO historique_depot 
+    $sql = "INSERT INTO historique_depot (personne_id, raison_titre, montant, total)
     VALUES ('%s', '%s', '%s', '%s');";
     $sql = sprintf($sql, $personne_id, $raison_titre, $montant, $total);
 
@@ -55,6 +55,12 @@ function get_all_personnes() {
 
     return get_all_lines($sql) ;
 }
+function get_all_historique_depot() {
+    $sql = "SELECT * 
+    FROM historique_depot;" ;
+
+    return get_all_lines($sql) ;
+}
 // -------------------------------------------------------------------------------
 // GET ONE : 
 function get_one_personne($personne_id) {
@@ -64,5 +70,13 @@ function get_one_personne($personne_id) {
     $sql = sprintf($sql, $personne_id) ;
 
     return get_one_line($sql) ;
+}
+// -------------------------------------------------------------------------------
+// AUTRE : 
+function get_the_total($montant, $last_vola) {
+    if ($last_vola === NULL) {
+        $last_vola = 0 ;
+    }
+    return ($montant + $last_vola) ;
 }
 ?>

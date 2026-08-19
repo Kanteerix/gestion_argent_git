@@ -20,7 +20,7 @@ $choix = $_GET['choix'] ;
             <h1>DEPOT</h1>
             <form action="../php/traitements/traitement_depot.php" method="get">
                 <label for="personne">Personne : </label>
-                <select name="personne" id="personne">
+                <select name="personne_id" id="personne">
                     <?php 
                 for ($i=0; $i <= count($all_personnes)-1 ; $i++) { ?>
                     <option value="<?= $all_personnes[$i]['personne_id'] ?>" 
