@@ -111,10 +111,4 @@ function get_last_line_transaction() {
 }
 // -------------------------------------------------------------------------------
 // AUTRE : 
-function get_the_total($montant, $last_vola) {
-    if ($last_vola === NULL) {
-        $last_vola = 0 ;
-    }
-    return ($montant + $last_vola) ;
-}
 ?>
