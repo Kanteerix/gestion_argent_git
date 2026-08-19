@@ -11,6 +11,7 @@
     </head>
     <main>
         <a href="pages/depot_retrait.php"><button>COMMENCER</button></a>
+        <a href="pages/liste_transactions.php"><button>Voir les transactions</button></a>
     </main>
     <footer>
 

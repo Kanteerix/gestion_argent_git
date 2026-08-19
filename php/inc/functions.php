@@ -86,9 +86,9 @@ function get_all_personnes() {
 
     return get_all_lines($sql) ;
 }
-function get_all_historique_depot() {
+function get_all_historique_depot_retrait() {
     $sql = "SELECT * 
-    FROM historique_depot;" ;
+    FROM historique_depot_retrait;" ;
 
     return get_all_lines($sql) ;
 }
