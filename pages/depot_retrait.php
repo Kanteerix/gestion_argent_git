@@ -15,6 +15,7 @@ $value_types = get_enum_values($nom_table, $nom_column) ;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRANSACTIONS</title>
+    <link rel="stylesheet" href="../assets/css/depot_retrait.css">
 </head>
 <body>
     <head>
@@ -25,31 +26,33 @@ $value_types = get_enum_values($nom_table, $nom_column) ;
         if (isset($_GET['ok'])) { ?>
             <p>Transaction reussie!!</p>
         <?php }?>
-        <form action="../php/traitements/traitement_transaction.php" method="get">
-            <label for="personne">Personne : </label>
-            <select name="personne_id" id="personne">
-                <?php 
-            for ($i=0; $i <= count($all_personnes)-1 ; $i++) { ?>
-                <option value="<?= $all_personnes[$i]['personne_id'] ?>" 
-                <?= $all_personnes[$i]['personne_name']=="Dada" ? "selected" : "" ?>>
-                <?= $all_personnes[$i]['personne_name'] ?>
+        <div class="t-card">
+            <form action="../php/traitements/traitement_transaction.php" method="get">
+                <label for="personne">Personne : </label>
+                <select name="personne_id" id="personne">
+                    <?php 
+                for ($i=0; $i <= count($all_personnes)-1 ; $i++) { ?>
+                    <option value="<?= $all_personnes[$i]['personne_id'] ?>" 
+                    <?= $all_personnes[$i]['personne_name']=="Dada" ? "selected" : "" ?>>
+                    <?= $all_personnes[$i]['personne_name'] ?>
                 </option>
-            <?php } ?>
-            </select><br>
-            <label for="choix">Choix : </label>
-            <select name="choix" id="choix">
-                <?php 
-                foreach ($value_types as $v_t) { ?>
-                <option value="<?= $v_t ?>"><?= $v_t ?></option>
-                <?php }
-                ?>
-            </select><br>
-            <label for="raison">Titre RAISONS : </label>
-            <input type="text" name="raison" id="raison"><br>
-            <label for="montant">Montant : </label>
-            <input type="number" name="montant" id="montant"><br>
-            <input type="submit" value="Deposer">
-        </form>
+                <?php } ?>
+                </select><br>
+                <label for="choix">Choix : </label>
+                <select name="choix" id="choix">
+                    <?php 
+                        foreach ($value_types as $v_t) { ?>
+                        <option value="<?= $v_t ?>"><?= $v_t ?></option>
+                        <?php }
+                        ?>
+                </select><br>
+                <label for="raison">Titre RAISONS : </label>
+                <input type="text" name="raison" id="raison"><br>
+                <label for="montant">Montant : </label>
+                <input type="number" name="montant" id="montant"><br>
+                <input type="submit" value="Deposer">
+            </form>
+        </div>
     </main>
     <footer>
         

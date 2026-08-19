@@ -1,0 +1,15 @@
+.t-card {
+    background-color: red;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    /* margin: 30; */
+    border: 3px solid magenta;
+    border-radius: 30px;
+}
