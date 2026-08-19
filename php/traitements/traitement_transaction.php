@@ -7,3 +7,5 @@ $raison = $_GET['raison'] ;
 $montant = $_GET['montant'] ;
 
 insert_into_historique_depot_retrait($type_d_r, $personne_id, $raison, $montant) ; 
+
+header('Location:../../pages/depot_retrait.php?ok=ok') ;

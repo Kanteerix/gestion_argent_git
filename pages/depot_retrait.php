@@ -8,7 +8,6 @@ $all_personnes = get_all_personnes() ;
 
 $value_types = get_enum_values($nom_table, $nom_column) ;
 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,6 +21,10 @@ $value_types = get_enum_values($nom_table, $nom_column) ;
         <a href="../index.php">Retour Accueil (choix)</a>
     </head>
     <main>
+        <?php 
+        if (isset($_GET['ok'])) { ?>
+            <p>Transaction reussie!!</p>
+        <?php }?>
         <form action="../php/traitements/traitement_transaction.php" method="get">
             <label for="personne">Personne : </label>
             <select name="personne_id" id="personne">
