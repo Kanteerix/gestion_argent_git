@@ -12,7 +12,8 @@
     <main>
         <a href="pages/depot_retrait.php"><button>COMMENCER</button></a>
         <a href="pages/liste_transactions.php"><button>Voir les transactions</button></a>
-        <a href="#"><button>Random LAOKA</button></a>
+        <a href="pages/random_laoka.php"><button>Random LAOKA</button></a>
+        <a href="pages/random_lasary.php"><button>Random LASARY</button></a>
     </main>
     <footer>
 
