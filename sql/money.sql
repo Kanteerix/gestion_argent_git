@@ -21,4 +21,27 @@ INSERT INTO personnes (personne_name) VALUES
 ("Kevin"),
 ("Anja");
 
-
+/*PLATS*/
+CREATE TABLE plats (
+    plat_id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    plat_nom VARCHAR(200),
+    plat_photo VARCHAR(200)
+) ;
+CREATE TABLE categories (
+    categorie_id  INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    categorie_name VARCHAR(100)
+);
+CREATE TABLE categorie_plat (
+    categorie_id INT NOT NULL,
+    plat_id INT NOT NULL
+);
+INSERT INTO categories (categorie_name) VALUES 
+("Vegetarien"),
+("Boeuf"),
+("Porc"),
+("Boeuf Hache"),
+("Saucisse"),
+("Volaille"),
+("Poisson"),
+("Dessert"),
+("Entree");
