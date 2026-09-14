@@ -26,7 +26,7 @@ $all_transactions = get_all_historique_depot_retrait() ;
             </tr>
             <?php 
             for ($i=0; $i <= count($all_transactions)-1 ; $i++) { ?>
-                <tr>
+                <tr style="background-color:<?= depot_retrait_color($all_transactions[$i]['type_d_r']) ?>">
                     <td><?= $all_transactions[$i]['type_d_r'] ?></td>
                     <td><?= $all_transactions[$i]['the_date'] ?></td>
                     <td><?= $all_transactions[$i]['solde_initial'] ?></td>
