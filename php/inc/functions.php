@@ -88,7 +88,8 @@ function get_all_personnes() {
 }
 function get_all_historique_depot_retrait() {
     $sql = "SELECT * 
-    FROM historique_depot_retrait;" ;
+    FROM historique_depot_retrait
+    GROUP BY the_date DESC;" ;
 
     return get_all_lines($sql) ;
 }
