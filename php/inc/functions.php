@@ -111,4 +111,15 @@ function get_last_line_transaction() {
 }
 // -------------------------------------------------------------------------------
 // AUTRE : 
+function depot_retrait_color($type) {
+    if ($type == "depot") {
+        return "#7fbf7f" ;
+    }
+    else if ($type == "retrait") {
+        return "#ff7f7f" ;
+    }
+    else {
+        return "#7faaff" ;
+    }
+}
 ?>
