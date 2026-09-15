@@ -12,6 +12,7 @@ function convert_into_fmg($ariary) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste des transactions</title>
+    <link rel="stylesheet" href="../assets/css/liste_transaction.css">
 </head>
 <body>
     <header>
